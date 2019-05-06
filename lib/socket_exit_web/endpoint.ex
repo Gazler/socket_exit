@@ -1,9 +1,8 @@
 defmodule SocketExitWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :socket_exit
 
-  socket "/socket", SocketExitWeb.UserSocket,
-    websocket: true,
-    longpoll: false
+  socket "/socket", SocketExit.TestSocket,
+    websocket: true
 
   # Serve at "/" the static files from "priv/static" directory.
   #
